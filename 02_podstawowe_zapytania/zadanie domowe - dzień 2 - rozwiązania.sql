@@ -51,7 +51,3 @@ FROM
     USERS 
 WHERE 
     position = 'SENIOR';
-
-
-
-
