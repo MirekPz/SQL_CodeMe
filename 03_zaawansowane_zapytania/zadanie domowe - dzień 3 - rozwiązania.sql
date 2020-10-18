@@ -13,3 +13,14 @@ SELECT lastname, replace(replace(lastname, 'K', 'X'), 'L', 'X') AS modified_last
 
 -- 3.   Wyświetl tylko tych pracowników, którzy mają literę L w drugiej połowie nazwiska.
 
+-- Pozornie dobre rozwiązanie, ale tylko ze względu na przypadkowe dopasowanie danych: 
+SELECT 
+    lastname, 
+    instr(lastname,'L') AS 'Pozycja litery L',  -- jeżeli litera się powtarza w nazwisku to podawane jest jej pierwsze wystąpienie
+    length(lastname) AS 'Długość nazwiska' 
+FROM 
+	users
+WHERE 
+	instr(lastname,'L') > length(lastname)/2;
+    
+-- Np. dla nazwiska WILLIALS podany zostanie błędny wynik. 
