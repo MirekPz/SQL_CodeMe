@@ -28,3 +28,15 @@ WHERE
 --      Wyświetl: 
 --                imię, nazwisko, stara podstawa, nowa podstawa wynagrodzenia.
 
+SELECT 
+	firstname, 
+	lastname,
+	salary_base,
+	round(salary_base*1.15) AS new_salary 
+FROM 
+	users;
+
+
+
+-- 5. Policz jaki staż będzie miał każdy pracownik 1 stycznia 2021, wyświetl w dniach oraz w latach.
+
