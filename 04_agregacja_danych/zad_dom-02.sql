@@ -8,13 +8,13 @@
 --    ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
 SELECT 
-	firstname, 
-	lastname, 
+    firstname, 
+    lastname, 
     salary_base, 
     CASE
-		WHEN salary_base < 480 THEN 'less than 480'
+        WHEN salary_base < 480 THEN 'less than 480'
         WHEN salary_base = 480 THEN 'equals 480'
         ELSE 'more than 480'
     END AS 'limit' 
 FROM 
-	users;
+    users; 
