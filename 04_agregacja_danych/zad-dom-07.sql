@@ -2,7 +2,7 @@
 
 SELECT 
     id_team, 
-    sum(salary_base + ifnull(salary_add,0))
+    sum(salary_base + ifnull(salary_add,0)) AS total_monthly_salary
 FROM 
     users
 GROUP BY 
