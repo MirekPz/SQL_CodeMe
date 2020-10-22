@@ -20,5 +20,5 @@ FROM
 GROUP BY 
     id_user
 HAVING 
-    count(id_user) > 0;
+    count(id_user) > 1;
 
