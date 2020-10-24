@@ -87,3 +87,10 @@ SELECT dog_name,
     100*frequency/57592 AS procent FROM dog_name_data 
 order by 
     frequency desc;    -- Bella
+
+
+-- imiona, które częściej pojawiają się w bazie zwierząt niż u ludzi:
+????????
+
+-- imiona, które są typowym imieniem zwierzęcym (znacznie częściej takie imię nosi zwierzę niż człowiek):
+?????
