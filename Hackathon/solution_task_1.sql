@@ -87,7 +87,3 @@ SELECT dog_name,
     100*frequency/57592 AS procent FROM dog_name_data 
 order by 
     frequency desc;    -- Bella
-
--- Wnioski: 
--- imię JESS niepopularne wśród dzieci (0)
--- imię MAX mało popularne wśród psów (638/57592), bardziej wśród dzieci (97/8321)
